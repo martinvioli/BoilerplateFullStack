@@ -29,6 +29,7 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
+      // Remember to add your databasename
         `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/hereGoesYourDataBaseName`,
         { logging: false, native: false }
       );
